@@ -1,0 +1,7 @@
+<!--pages/history/history.wxml-->
+<import src='../template/history-template/history-template.wxml' />
+<view class="coll-main">
+    <block wx:for="{{7}}">
+      <template is='collection'></template>
+    </block>
+</view>

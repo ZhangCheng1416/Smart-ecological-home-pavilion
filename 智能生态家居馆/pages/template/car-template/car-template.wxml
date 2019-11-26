@@ -1,0 +1,36 @@
+  <template name="car-item">
+  <view class='car-item'>
+    <!-- 选中与未选中 -->
+      <view  class="car-item-img" data-id="{{}}" bindtap="toggleSelect">
+       <image src='/images/car/icon-ok.png' wx:if="{{true}}" ></image>
+       <image src='/images/car/icon-none.png' wx:else ></image>
+      </view>
+     
+      <!-- 产品图片 -->
+      <view class="car-item-img2" data-id="{{}}">
+        <image src='/images/car/产品.png'></image>
+      </view>
+      <!-- 商品信息 -->
+      <view class="car-item-title">
+          <view class="car-item-title-top">
+            <view class="name">狼牙枕</view>
+            <view class="title-color">白色</view>
+          </view>
+          <view class="car-item-price">
+          ￥238.00
+          </view>
+      </view>
+      <!-- 加与减 -->
+      <view class="car-item-bottom">
+          <view class="addAndDel" wx:if="{{true}}">
+              <view class="del" bindtap='onToJian' data-id="{{}}">-</view>
+              <view class="num">1</view>
+              <view class="add" bindtap='onToJia' data-id="{{}}">+</view>
+          </view>
+          <view class="delete" wx:else bindtap='onToDelete' data-id="{{}}">
+            <image src="/images/car/del.png"></image>
+             <view>删除</view>
+          </view>
+       </view>
+  </view>
+  </template>

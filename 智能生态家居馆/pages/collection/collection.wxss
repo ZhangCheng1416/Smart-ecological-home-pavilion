@@ -1,0 +1,9 @@
+/* pages/collection/collection.wxss */
+@import '../template/collection-template/collection-template.wxss';
+.coll-main{display: flex;flex-wrap: wrap;justify-content: center;}
+
+
+
+
+
+

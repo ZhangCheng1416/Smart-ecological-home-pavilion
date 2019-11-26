@@ -1,0 +1,116 @@
+<!-- 自定义头部 -->
+<view class="place-home">
+    <view><image src="/images/placeholder/icon-5.png"></image></view>
+    <view>确认订单</view>
+</view>
+
+<!-- 收货地址 -->
+<view class="place-top">
+    <image src="/images/placeholder/icon-1.png"></image>
+    <view>请选择收货地址</view>
+    <image src="/images/me/向右.png"></image>
+</view> 
+<!-- 分割线 -->
+<view class="place-Fimg">
+  <image src="/images/placeholder/icon-2.png"></image>
+</view>
+<!-- 商品信息 -->
+<view class="place-shop">
+    <view class="img">
+      <image  src="/images/home/tailand22.png"></image>
+    </view>
+    <view class="title">
+      <view>狼牙真</view>
+      <view>米色</view>
+    </view>
+    <view class="price">
+        <view>共1件</view>
+        <view>￥238.00</view>
+    </view>
+</view>
+<!-- 优惠券 -->
+<view class="place-coupon" bindtap="onToCoupon">
+    <view>优惠</view>
+    <view>
+     0张可用
+    <image src="/images/me/向右.png"></image>
+    </view>
+</view>
+<!-- 商品总额及运费 -->
+<view class="place-price">
+    <view class="place-coupon">
+      <view>商品总额</view>
+      <view>
+     ￥238.00
+      </view>
+  </view>
+    <view class="place-coupon">
+      <view>运费</view>
+      <view>
+      ￥0.00
+      </view>
+     </view>
+</view>
+<!-- 留言 -->
+<view class="place-liu">
+  <view>留言</view>
+  <view>给卖家留言</view>
+</view>
+<!-- 支付 -->
+<view class="place-zhifu">
+  <view class="zhifu">
+      <view class="img"><image src="/images/placeholder/icon-3.png"></image></view>
+      <view>微信支付</view>
+    
+  </view>
+    <view class="zhifu">
+      <view class="img"><image src="/images/placeholder/icon-4.png"></image></view>
+      <view>找好友支付</view>
+    </view>
+</view>
+<!-- 确认订单 -->
+<view class="place-order">
+    <view class="place-order-price">
+      <view>应付款：</view>
+      <view>￥238.00</view>
+    </view>
+    <view class="place-order-toOrder" bindtap="toShow">
+        提交订单
+    </view>
+</view>
+
+
+
+<!-- 确认支付密码的遮罩层 -->
+<view class="toPassword" hidden="{{isShow}}">
+
+</view>
+
+<!-- 确认支付密码的样式 -->
+<view class="toOkPassword" hidden="{{isShow}}">
+    <view class="toOk-name">
+      <view class="closeTook" bindtap='toHide'><image src="/images/placeholder/icon-6.png"></image></view>
+      <view class="name"><image src="/images/home/assemble-2.jpeg"></image></view>
+      <view>确认支付密码</view>
+    </view>
+    
+    
+    <view class="nameAndPrice">
+        <view>煊赫</view>
+        <view><text>￥</text>238.00</view>
+    </view>
+    <view class="yinhang">
+        <view>
+          <image src="/images/placeholder/card.png"></image>
+          <view>工商银行储存卡 (******) </view>
+        </view>
+        <image src="/images/me/向右.png"></image>
+    </view>
+    <view class="nameAndPrice-btn">
+      确认支付
+    </view>
+</view>
+
+
+
+

@@ -1,0 +1,54 @@
+<!--pages/coupon/coupon.wxml-->
+<view class="coupon">
+    <view class="coupon-top">
+      <view class="left"></view>
+      <view class="right">可用红包为<text>5</text>个</view>
+    </view>
+
+    <view class="coupon-center">
+      <block wx:for="{{5}}">
+        <view class="coupon-item">
+              <!-- 左侧小圆点 -->
+              <view class="left">
+                  <block wx:for="{{10}}">
+                    <view></view>
+                  </block>
+              </view>
+              <!-- 中部内容 -->
+              <view class="content">
+        
+                  <view class="content-text">
+                          <view>￥<text>5</text> 购物券</view>
+                          <view><text>收藏+关注</text></view>
+                  </view>
+                  <view class="right">
+                      <view class="btn">立即使用</view>
+                  </view>
+              </view>
+              <!-- 右侧小圆点 -->
+               <view class="right">
+                  <block wx:for="{{10}}">
+                    <view></view>
+                  </block>
+              </view>
+        </view>
+      </block>
+    </view>
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+/* pages/car/car.wxss */
+@import '../template/car-template/car-template.wxss';
+page{background: #f7f7f7}
+.car-main{padding-bottom: 100rpx}
+.car-main .car-item:first-child{margin-top: 5rpx}
+.car-main .car-item{margin-top: 20rpx}
+
+.car-bottom{height:100rpx;width:100%;background: white;position: fixed;bottom:0rpx;display: flex;align-items: center;justify-content: space-between}
+.quanxuan{width:202rpx;height:42rpx;margin:0 24rpx;display: flex}
+.quanxuan image{width:42rpx;height:100%}
+.quanxuan view{margin-left: 20rpx}
+.car-bottom-right{display: flex;margin-right: 27rpx}
+.car-bottom-right .price{font-size: 36rpx;color:#e01616;line-height: 70rpx}
+.car-bottom-right .toPrice{margin-left: 19rpx;width:150rpx;height:70rpx;border-radius: 12rpx;background: #dc3025;box-shadow: 1rpx 4rpx 12rpx 1rpx 
+		rgba(164, 215, 189, 0.29);color:white;text-align: center;line-height: 70rpx}
+
+
+.no-car{position: absolute;width:380rpx;height:385rpx;left: 50%;top:50%;transform: translate(-50%,-50%);display: flex;justify-content: center;flex-wrap: wrap;}
+.no-car image{width:280rpx;height:170rpx;margin-right: 45rpx}
+.no-car .title{font-size: 30rpx;
+	font-weight: normal;  
+	font-stretch: normal;
+	line-height: 31rpx;
+	letter-spacing: 0rpx;
+	color: #999999;}
+.no-car .no-car-btn{width: 202rpx;
+	height: 78rpx;
+	background-color: #278c58;
+	border-radius: 14rpx;color:white;text-align: center;line-height: 78rpx}
+
+

@@ -1,0 +1,94 @@
+<!--pages/my/my.wxml-->
+<!-- 顶部 -->
+<view class="my-top">
+    <view class="top-img">
+        <view class="top-img-left"><image src="/images/me/设置.png"></image></view>
+        <view class="top-img-right"><image src="/images/me/消息.png"></image></view>
+    </view>
+    <!-- 我的头像框 -->
+    <view class="top-name">
+        <view class="img"> 
+          <image src='/images/home/assemble-2.jpeg'></image>
+          <view class="imgtwo">Vo</view>
+        </view>
+        <view class="title">JZR9700</view>
+    </view>
+</view>
+
+<!-- 中部 -->
+<view class="my-center">
+
+   <view class="my-myorder">
+        <view class="left">
+            <image src="/images/me/我的订单.png"></image>
+            <view>我的订单</view>
+        </view>
+         <view class="right" bindtap='onToOrder'>
+             <view>查看全部订单</view>
+             <image src="/images/me/向右.png"></image>
+        </view>
+   </view>
+
+   <view class="my-myfenlei">
+        <view class="myfenlei-box">
+              <image src="/images/me/待付款.png"></image>
+              <view>待付款</view>
+        </view>
+         <view class="myfenlei-box">
+              <image src="/images/me/待分享.png"></image>
+              <view>待分享</view>
+        </view>
+         <view class="myfenlei-box">
+              <image src="/images/me/待发货.png"></image>
+              <view>待发货</view>
+        </view>
+         <view class="myfenlei-box">
+              <image src="/images/me/待收货.png"></image>
+              <view>待收货</view>
+        </view>
+         <view class="myfenlei-box">
+              <image src="/images/me/评价.png"></image>
+              <view>待评价</view>
+        </view>
+   </view>
+
+   <view class="my-bottom">
+      <view class="my-myorder">
+          <view class="left">
+              <image src="/images/me/优惠券.png"></image>
+              <view>优惠券</view>
+          </view>
+          <view class="right">
+              <image src="/images/me/向右.png"></image>
+          </view>
+    </view>
+    <view class="my-myorder">
+          <view class="left">
+              <image src="/images/me/收藏.png"></image>
+              <view>商品收藏</view>
+          </view>
+          <view class="right">
+              <image src="/images/me/向右.png"></image>
+          </view>
+    </view>
+    <view class="my-myorder">
+          <view class="left">
+              <image src="/images/me/退货.png"></image>
+              <view>历史记录</view>
+          </view>
+          <view class="right">
+              <image src="/images/me/向右.png"></image>
+          </view>
+    </view>
+    <view class="my-myorder">
+          <view class="left">
+              <image src="/images/me/我的订单.png"></image>
+              <view>退款售后</view>
+          </view>
+          <view class="right">
+              <image src="/images/me/向右.png"></image>
+          </view>
+    </view>
+   </view>
+</view>
+

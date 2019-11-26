@@ -1,0 +1,106 @@
+<!--pages/order/order.wxml-->
+<view class="order">
+
+<!-- 第一种情况，当有数据时，直接改变wxif值即可 -->
+    <view class="order-item">
+      <!-- 当交易成功是显示 -->
+       <view class="order-ok" wx:if="{{true}}">
+          <view>订单编号:956421231521245</view>
+          <view>交易完成</view>
+       </view>
+      <!-- 商品信息 -->
+        <view class="order-shop">
+            <view class="img">
+              <image src="/images/car/1.jpg"></image>
+            </view>
+            <view class="shop-right">
+                <view class="top">
+                    <view class="top-left">POKALEN乳胶枕头泰国原装进口
+颈椎天然橡胶枕...</view>
+                    <view class="top-right">￥<text>299.0</text> </view>
+                </view>
+                <view class="bottom">
+                        <view class="top-left">天然乳胶</view>
+                    <view class="top-right">×1</view>
+                </view>
+            </view>
+        </view>
+
+      <!-- 商品价格 -->
+        <view class="price">
+
+          <view>共计1件商品 合计: <view>￥<text> 299.2</text></view> (含运费￥0.00)</view>
+        </view>
+        <!-- 支付与取消订单 -->
+        <view class="order-item-bottom">
+            <view class="delAndPing" wx:if="{{true}}">
+                
+                <view class="ping">评价</view>
+                <view class="del">删除</view>
+            </view>
+            <view class="noAndGo" wx:else>
+                
+                <view class="Go">去支付</view>
+                 <view class="no">取消订单</view>
+            </view>
+        </view>
+    </view>
+
+
+<!-- 第二种情况 -->
+    <view class="order-item">
+      <!-- 当交易成功是显示 -->
+       <view class="order-ok" wx:if="{{false}}">
+          <view>订单编号:956421231521245</view>
+          <view>交易完成</view>
+       </view>
+      <!-- 商品信息 -->
+        <view class="order-shop">
+            <view class="img">
+              <image src="/images/car/1.jpg"></image>
+            </view>
+            <view class="shop-right">
+                <view class="top">
+                    <view class="top-left">POKALEN乳胶枕头泰国原装进口
+颈椎天然橡胶枕...</view>
+                    <view class="top-right">￥<text>299.0</text> </view>
+                </view>
+                <view class="bottom">
+                        <view class="top-left">天然乳胶</view>
+                    <view class="top-right">×1</view>
+                </view>
+            </view>
+        </view>
+
+      <!-- 商品价格 -->
+        <view class="price">
+
+          <view>共计1件商品 合计: <view>￥<text> 299.2</text></view> (含运费￥0.00)</view>
+        </view>
+        <!-- 支付与取消订单 -->
+        <view class="order-item-bottom">
+            <view class="delAndPing" wx:if="{{false}}">
+                
+                <view class="ping">评价</view>
+                <view class="del">删除</view>
+            </view>
+            <view class="noAndGo" wx:else>
+                
+                <view class="Go">去支付</view>
+                 <view class="no">取消订单</view>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+

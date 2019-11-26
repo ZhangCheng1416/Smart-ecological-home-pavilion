@@ -1,0 +1,37 @@
+<view class="box">
+  <view class="url">请确认收货地址</view>
+  <view class="item">
+    <view class="pic">
+      <image src="/images/products/产品.png"></image>
+    </view>
+    <view class="name"><text>狼牙枕</text></view>
+    <view class="color"><text>米色</text></view>
+    <view class="num">
+      <text>共计1件</text>
+      <text>￥238.00</text>
+    </view>
+  </view>
+  <view>
+    <text>优惠</text>
+    <text>0张可用</text>
+  </view>
+  <view>
+    <text>商品总额</text>
+    <text>￥238.00</text>
+  </view>
+  <view>
+    <text>运费</text>
+    <text>￥0.00</text>
+  </view>
+  <view>
+    <text>留言</text>
+    <text>给卖家留言</text>
+  </view>
+  <view>微信支付</view>
+  <view>找微信好友支付</view>
+  <view>
+    <text>应付款：</text>
+    <text>￥238.00</text>
+    <view>提交订单</view>
+  </view>
+</view>

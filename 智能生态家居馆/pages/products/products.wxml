@@ -1,0 +1,30 @@
+<!--pages/products/products.wxml-->
+<view class="swiper" >
+ <image src="/images/products/222.jpg"></image>
+</view>
+
+<view class='products-main'>
+  <block wx:for="{{5}}">
+    <view class='products-item'>
+         <view class="star">
+        <image src="{{true?'/images/products/star.png':'/images/products/star-no.png'}}"></image>
+         </view>
+         <view class="shop" bindtap="goDetail">
+          <image src="/images/products/产品.png"></image>
+         </view>
+          <view class="title">泰国波浪平面枕</view>
+          <view class="name">泰国天然乳胶原料</view>
+          <view class="price">￥228.0</view>
+    </view>
+  </block>
+</view>
+
+
+
+
+
+
+
+
+
+

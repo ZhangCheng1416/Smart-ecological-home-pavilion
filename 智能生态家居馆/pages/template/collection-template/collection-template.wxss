@@ -1,0 +1,31 @@
+
+.coll-item{width:690rpx;height:259rpx;background-color: #ffffff;
+	box-shadow: 0rpx 3rpx 7rpx 2rpx 
+		rgba(0, 0, 0, 0.06), 
+		inset 0rpx 1rpx 2rpx 0rpx 
+		rgba(228, 228, 228, 0.35);
+	border-radius: 6rpx;margin-top: 30rpx;display: flex;}
+.coll-item-img{width: 192rpx;height: 199rpx;border-radius: 10rpx;}
+.coll-item-img image{width: 100%;height:100%;border-radius: 10rpx;margin:20rpx 0 0 14rpx}
+
+
+
+.coll-item-box{width:461rpx;margin:20rpx 0 0 40rpx;}
+.coll-item-box .title{font-family: MicrosoftYaHei;
+	font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0rpx;
+	color: #383a3a;}
+.coll-item-box .name{font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 22rpx;
+	letter-spacing: 0rpx;
+	color: #ff3f3f;margin-top: 14rpx}
+
+.coll-item-box .coll-item-bottom{display: flex;margin-top: 55rpx;justify-content: space-between}
+.coll-item-bottom .price{font-size: 24rpx;	color: #ff3f3f;}
+.coll-item-bottom .price text{font-size: 36rpx;}
+.coll-item-bottom .right{font-size: 22rpx;color: #b9b9b9;margin: 20rpx 20rpx 0 0}

@@ -1,0 +1,24 @@
+<template name="collection">
+<view class='coll-item'>
+        <view class="coll-item-img">
+           <image src='/images/collection/1.png'></image>
+        </view>
+        <view class="coll-item-box">
+          <view class="title">
+         NeoDPillo印尼邓禄普官方正品原装进口
+天然乳胶枕头波枕...
+          </view>
+         
+
+          <view class="coll-item-bottom">
+              <view class="price">￥ <text>299.00</text></view>
+              <view class="right">
+                <view class="left">已有5656人购买</view>
+                <view class="city">上海</view>
+              </view>
+          </view>
+
+        </view>
+    </view>
+
+    </template>

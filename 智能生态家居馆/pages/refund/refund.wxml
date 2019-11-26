@@ -1,0 +1,63 @@
+<!--pages/refund/refund.wxml-->
+<view class="refund">
+
+    <block wx:for="{{4}}">
+      <view class="refund-item">
+        
+              <view class="item-title">
+                  <image src='/images/refund/icon.png'></image>
+                  <view class="name">neodpillo海外旗舰店</view>
+                  <view class='righ'><image src="/images/refund/icon-1.png"></image></view>
+              </view>
+
+            <view class="item-center">
+                <view class="img">
+                  <image src="/images/car/1.jpg"></image>
+                </view>
+                <view class="right">
+                    <view class="title">
+                    NeoDPillo印尼邓禄普官方正品原装进口
+                  天然乳胶枕头波浪颈椎枕...
+                    <text>×1</text>
+                  </view>
+                  <view class="num">共1件商品</view>
+                </view>
+            </view>
+
+            <view class="item-price">
+              <view class="price-left">
+                  <image src='/images/refund/icon-2.png'></image>
+                  <view>仅退款，退款成功</view>
+              </view>
+                <view class="price-right">
+                    退款金额:￥ <text>299.00</text>
+                </view>
+            </view>
+
+            <view class="item-xingqing">
+                  <view class="toXingqing">
+                      查看详情
+                  </view>
+            </view>
+
+      </view>
+    </block>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

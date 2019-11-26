@@ -1,0 +1,23 @@
+<template name="collection">
+<view class='coll-item'>
+        <view class="coll-item-img">
+           <image src='/images/collection/1.png'></image>
+        </view>
+        <view class="coll-item-box">
+          <view class="title">
+         NeoDPillo印尼邓禄普官方正品原装进口
+天然乳胶枕头波浪颈椎枕...
+          </view>
+           <view class="name">
+                比收藏时降价20.00元
+          </view>
+
+          <view class="coll-item-bottom">
+              <view class="price">￥ <text>299.00</text></view>
+              <view class="right">已有10人点赞</view>
+          </view>
+
+        </view>
+    </view>
+
+    </template>

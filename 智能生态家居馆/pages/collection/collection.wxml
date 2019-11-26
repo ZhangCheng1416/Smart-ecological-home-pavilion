@@ -1,0 +1,16 @@
+<!--pages/collection/collection.wxml-->
+<import src='../template/collection-template/collection-template.wxml' />
+<view class="coll-main">
+    <block wx:for="{{8}}">
+    <template is='collection'></template>
+    </block>
+</view>
+
+
+
+
+
+
+
+
+

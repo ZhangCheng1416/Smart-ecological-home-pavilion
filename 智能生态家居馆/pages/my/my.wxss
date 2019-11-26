@@ -1,0 +1,39 @@
+/* pages/my/my.wxss */
+.my-top{width:100%;height:400rpx;background: #1ca95e;overflow: hidden}
+.top-img{width:100%;height:37rpx;margin-top: 80rpx;display: flex;justify-content: space-between}
+.top-img>view{width:37rpx;height:37rpx;}
+.top-img .top-img-left{margin-left: 25rpx}
+.top-img .top-img-right{margin-right: 25rpx}
+.top-img>view>image{width:100%;height:100%}
+.top-name{width:129rpx;height:180rpx;margin:20rpx auto;}
+.top-name .img{border-radius: 50%;width:129rpx;height:129rpx;background: white;position:relative}
+.top-name .img image{width:110rpx;height:110rpx;border-radius: 50%;position:absolute;left: 50%;top:50%;transform: translate(-50%,-50%)}
+.top-name .title{font-size: 30rpx;color:#fff;text-align: center}
+.top-name .img .imgtwo{position:absolute;background: #ff31a9;color:#fff;font-size: 20rpx;width:40rpx;height:40rpx;right:0;bottom:0;z-index: 2;border-radius: 50%;text-align: center;line-height: 40rpx}
+
+.my-center{width:100%;}
+.my-myorder{width:100%;height:120rpx;border-bottom: 1px solid #f8f8f8;display: flex;justify-content: space-between;align-items: center}
+.my-myorder .left{display: flex;align-items: center}
+.my-myorder .left image{width:50rpx;height:55rpx;display: block;margin: 0 28rpx}
+.my-myorder .left view{font-size: 30rpx;color:#747474}
+
+.my-myorder .right{display: flex;align-items: center}
+.my-myorder .right image{width:20rpx;height:35rpx;display: block;margin: 0 28rpx}
+.my-myorder .right view{font-size: 24rpx;color:#ababab;}
+
+.my-myfenlei{width:100%;height:150rpx;border-bottom: 1px solid #f8f8f8;display: flex;justify-content: space-around;align-items: center}
+.myfenlei-box{display: flex;flex-direction: column;justify-content: center;
+align-items:center;width:15%}
+.myfenlei-box image{width:44rpx;height:42rpx;}
+.myfenlei-box view{font-size: 24rpx;color:#ababab;margin-top: 15rpx}
+
+.my-bottom .my-myorder{width:100%;height:100rpx;border-bottom: 1px solid #f8f8f8;display: flex;justify-content: space-between;align-items: center}
+.my-bottom .my-myorder .left{display: flex;align-items: center}
+.my-bottom .my-myorder .left image{width:50rpx;height:55rpx;display: block;margin: 0 28rpx}
+.my-bottom .my-myorder .left view{font-size: 30rpx;color:#747474}
+
+
+
+
+
+

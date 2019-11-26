@@ -1,0 +1,44 @@
+/* pages/order/order.wxss */
+page{background: #f2f2f2}
+.order .order-item:first-child{margin-top: 10rpx}
+.order-item{width:100%;background: white;margin-top: 30rpx}
+.order-item .order-ok{width:100%;height:70rpx;background: white;display: flex;align-items: center;justify-content: space-between}
+.order-ok view:nth-child(1){font-size: 24rpx;color:#8d8d8d;margin-left: 20rpx}
+.order-ok view:nth-child(2){font-size: 26rpx;color:#24ab63;margin-right: 20rpx}
+
+.order-shop{width:100%;height:210rpx;background: #f7f7f7;display: flex}
+.order-shop .img{width:160rpx;height:160rpx;}
+.order-shop .img image{width:100%;height:100%;margin:22rpx 0 0 22rpx}
+.order-shop .shop-right{flex: 1;margin-left: 20rpx}
+.shop-right .top{display: flex;margin-left: 39rpx;margin-top: 42rpx;justify-content: space-between}
+.shop-right .top .top-left{font-size: 26rpx;color:#383a3a;flex: 1}
+.shop-right .top .top-right{width:153rpx;color:#dc3025;text-align: center}
+.shop-right .top .top-right text{font-size: 30rpx}
+
+.shop-right .bottom{display: flex;margin-left: 39rpx;justify-content: space-between;margin-top: 35rpx}
+.shop-right .bottom .top-left{font-size: 22rpx;color:#bebebe}
+.shop-right .bottom .top-right{font-size: 26rpx;color:#bebebe;margin-right: 20rpx}
+
+.price{width:100%;height:80rpx;background: white;border-top:1px solid #ccc;border-bottom: 1px solid #ccc}
+.price>view{line-height: 80rpx;display: flex;font-size: 26rpx;float: right;margin-right: 20rpx;color:#8b8b8b}
+.price>view view{color:#dc3025}
+.price>view view text{font-size: 35rpx;font-weight: bolder;padding-right: 10rpx}
+
+.order-item-bottom{width:100%;height:100rpx;}
+.order-item-bottom .delAndPing{display: flex;align-items: center;height:100%;width:100%;flex-direction: row-reverse}
+.order-item-bottom .delAndPing>view{margin-right: 20rpx}
+.order-item-bottom .delAndPing .del{width:144rpx;height:55rpx;border-radius: 28rpx;
+	border: solid 2rpx #cccccc;color:#ccc;text-align: center;line-height: 55rpx;font-size: 26rpx}
+.order-item-bottom .delAndPing .ping{width:144rpx;height:55rpx;border-radius: 28rpx;
+	border: solid 2rpx #1ca95e;color:#1ca95e;text-align: center;line-height: 55rpx;font-size: 26rpx}
+
+
+.order-item-bottom .noAndGo{display: flex;align-items: center;height:100%;width:100%;flex-direction: row-reverse}
+.order-item-bottom .noAndGo>view{margin-right: 20rpx}
+.order-item-bottom .noAndGo .no{width:144rpx;height:55rpx;border-radius: 28rpx;
+	border: solid 2rpx #cccccc;color:#ccc;text-align: center;line-height: 55rpx;font-size: 26rpx}
+.order-item-bottom .noAndGo .Go{width:144rpx;height:55rpx;border-radius: 28rpx;
+	background-color: #dc3025;border: solid 2rpx #dc3025;color:white;text-align: center;line-height: 55rpx;font-size: 26rpx}
+
+
+

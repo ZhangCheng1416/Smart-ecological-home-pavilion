@@ -1,0 +1,41 @@
+/* pages/refund/refund.wxss */
+page{background: #f2f2f2}
+.refund{width:100%;display: flex;flex-direction: column;align-items: center}
+.refund-item{width:702rpx;height:442rpx;background: white;border-radius: 20rpx;margin-top: 37rpx;}
+.refund .refund-item:first-child{margin-top: 16rpx}
+.item-title{height:38rpx;display: flex;margin-top: 20rpx;padding:0 20rpx}
+.item-title image{width:38rpx;height:38rpx}
+.item-title .name{line-height: 38rpx;margin-left:15rpx;font-size: 26rpx;color:#333}
+.item-title .righ{width:15rpx;height: 24rpx;margin-left: 15rpx}
+.item-title .righ image{width:100%;height:100%}
+
+.item-center{height:190rpx;display: flex;margin-top: 20rpx;padding:0 20rpx}
+
+.item-center .img{width:181rpx;height:181rpx;border-radius: 10rpx;}
+.item-center .img image{width:100%;height:100%;border-radius: 10rpx;}
+.item-center .right{flex:1;margin-left: 12rpx}
+.item-center .right .title{font-size: 28rpx;color: #383a3a;position:relative}
+.item-center .right .num{font-size: 25rpx;color:#333;margin-top: 40rpx}
+.item-center .right .title text{position:absolute;right: 0rpx;color:#9c9a9a}
+
+.item-price{display: flex;justify-content: space-between;padding:0 20rpx;margin-top: 38rpx;height:50rpx;align-items: center}
+.price-left{display: flex;font-size: 25rpx;color: #9c9a9a;}
+.price-left image{width: 30rpx;height: 28rpx;margin-right: 10rpx}
+.price-right{font-size: 25rpx;color:#333}
+.price-right text{font-size: 28rpx;}
+
+.item-xingqing{width:100%;height: 94rpx;box-shadow: inset 0rpx 1rpx 2rpx 0rpx #e4e4e4;border-radius: 0rpx 0rpx 20rpx 20rpx;display: flex;align-items: center;flex-direction: row-reverse}
+.item-xingqing .toXingqing{width: 144rpx;height: 55rpx;border-radius: 28rpx;border: solid 1rpx #dc3025;font-size: 26rpx;
+	font-weight: normal;
+	font-stretch: normal;
+  text-align: center;
+	line-height: 55rpx;
+	letter-spacing: 0rpx;
+	color: #da2015;margin-right: 18rpx}
+
+
+
+
+
+
+

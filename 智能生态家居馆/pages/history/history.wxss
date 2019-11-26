@@ -1,0 +1,11 @@
+/* pages/history/history.wxss */
+@import '../template/history-template/history-template.wxss';
+page{background: #f2f2f2}
+.coll-main{}
+
+
+
+
+
+
+

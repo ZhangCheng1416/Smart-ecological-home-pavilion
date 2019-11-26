@@ -1,0 +1,199 @@
+<!--pages/details/details.wxml-->
+<!-- 商品详情头部 -->
+<view class="details-top">
+    <view class="img"><image src="/images/details/bg5.jpg"></image></view>
+    <!-- 外观,图片 -->
+    <view class="image">
+        <view class="left {{true?'active':''}}">外观</view>
+        <view class="right {{false?'active':''}}">图片</view>
+    </view>
+</view>
+<!-- 商品名称 -->
+<view class="details-name">
+    <view class="name">新款正品万泰林/煊赫乳胶枕/泰国正品波浪按摩枕60*40cm</view>
+    <view class="price">￥<text>118-159</text></view>
+    <view class="bot">
+      <view>快递： 免运费</view>
+      <view>已拼118笔</view>
+    </view>
+</view>
+<!-- 店铺优惠券 -->
+<view class="youuiqun" bindtap="onToCoupon">
+    <view class="youuiqun-left">
+        <view>
+          <image src='/images/details/icon-1.png'></image>
+          <view>10元店铺优惠券</view>
+        </view>
+        <view>
+          <image src='/images/details/icon-1.png'></image>
+          <view>20元店铺优惠券</view>
+        </view>
+    </view>
+    <view class="youuiqun-right"><image src='/images/refund/icon-1.png'></image></view>
+</view>
+<!-- 7天无理由 -->
+<view class="tuihuo" bindtap='onToRefund'>
+      <image src='/images/details/icon-2.png'></image>
+      <view>7天无理由 · 48小时发货 · 假一赔十 · 全场包邮 </view>
+      <image src='/images/refund/icon-1.png'></image>
+</view>
+<!-- 拼单 -->
+<view class="pindan">
+    <view class="pindan-top"><text>2</text>人在拼单，可直接参与</view>
+    <view class="pindan-center">
+        <view class="img-name">
+               <image src='/images/home/assemble-2.jpeg'></image>
+              <view>团长</view>      
+        </view>
+
+        <view class="pindan-name">Lorem Ipsum</view>
+
+        <view class="pindan-time">
+          <view>差<text>3</text>人拼成</view>
+          <view>剩余 <text>24 : 11 : 22</text> 结束</view>
+        </view>
+
+        <view class="toPin">去拼单</view>
+    </view>
+</view>
+
+<!-- 商品评价 -->
+<view class="pingjia">
+    <view class="pingjia-top">
+      <view>商品评价 <text>(8823)</text></view>
+      <view>
+          <view>查看更多</view>
+          <image src='/images/refund/icon-1.png'></image>
+      </view> 
+    </view>
+
+    <view class="pingjia-gaishu">
+        <view>便宜(126)</view>
+        <view>便宜第三方(1256)</view>
+         <view>方(1256)</view>
+        <view>便宜s士大夫(14526)</view>
+    </view>
+
+    <view class="pingjia-xq">
+     <view class="pingjia-xq-item">
+            <view class="item-top">
+            <image src='/images/home/assemble-2.jpeg'></image>
+              <view>Lorem Ipsum</view>
+            </view>
+            <view class="item-centent">
+                商品质量特别的好晚上睡觉用它-夜到天亮，睡得很
+踏实没有异味收到货，柔软度还是不错的，枕头本身
+              <view class="item-centent-img" wx:if="{{true}}">
+                   <image src='/images/details/bg1.jpg'></image>
+                   <image src='/images/details/bg1.jpg'></image>
+                   <image src='/images/details/bg1.jpg'></image>
+              </view>
+            </view>
+            <view class="item-bottom"></view>
+        </view>
+    </view>
+
+    <view class="pingjia-btn">
+      <view>查看更多</view>
+      <image src='/images/details/icon-3.png'></image>
+    </view>
+</view>
+<!-- 商品详情 -->
+<view class="details-xq">
+  <view class="details-xq-top">商品详情</view>
+  <view class="details-xq-centent">
+     <block wx:for="{{6}}">
+      <view class="details-xq-item">
+           <image src='/images/home/tailand-1.png'></image>
+           <view class="name">乳胶波浪枕</view>
+           <view class="item-price">
+              <image src='/images/home/logo3.png'></image>
+              <view class="price-price"> ￥<text>238.00</text></view>
+              <view class="ok">
+                  立即购买
+                  <view><image src='/images/home/arrow.png'></image></view>
+              </view>
+           </view>
+      </view>
+     </block>
+  </view>
+</view>
+<!-- 商品图片 -->
+<view class="details-img">
+      <block wx:for="{{7}}">
+      <image src="/images/details/person{{index+1}}.png"></image>
+      </block>
+</view>
+
+<!-- 底部 -->
+<view class="details-fixed">
+  <view class="left">
+      <view class="details-left-item" bindtap='onToIndex'>
+            <image src="/images/home.png"></image>
+            <view>首页</view>
+      </view>
+       <view class="details-left-item" bindtap='onTocollection'>
+            <image src="/images/news.png"></image>
+            <view>收藏</view>
+      </view>
+       <view class="details-left-item" bindtap=''>
+            <image src="/images/me.png"></image>
+            <view>客服</view>
+      </view>
+  </view>
+  <view class="center" bindtap='onToCar'>
+  发起拼单
+  </view>
+  <view class="right" bindtap='onToCar'>
+  单独购买
+  </view>
+</view>
+
+
+<!-- 加入购物车遮罩层 -->
+<view class="toCar" hidden="{{isCar}}"></view>
+<!-- 加入购物车内容 -->
+<view class="car-centent {{isCar?'':'active'}}">
+      <!--叉号图标  -->
+      <view class="close" bindtap='onCloseCar'>
+        <image src="/images/details/icon-4.png"></image>
+      </view>
+      <!-- 购物车图片 -->
+      <view class="car-top">
+        <view class="car-top-image">
+          <image src="/images/details/bg5.jpg"></image>
+        </view>
+        <view class="car-top-content">
+            <view class="price">￥122-138</view>
+            <view class="kucun">库存<text>2456</text>件</view>
+            <view class="xuaze">请选择尺码</view>
+        </view>
+      </view>
+      <!-- 选择内容-->
+  <view class="car-centent-item">
+      <view class="car-oneCentent">
+            <view class="car-oneCentent-name">尺码</view>
+            <view class="car-oneCentent-content">
+                <block wx:for="{{3}}">
+                <view bindtap='onToXuan' class="{{index==sindex?'active':''}}" data-sindex="{{index}}">60*40cm</view>
+               
+               </block>
+            </view>
+      </view>
+    <view class="car-oneCentent">
+            <view class="car-oneCentent-name">颜色</view>
+            <view class="car-oneCentent-content">
+                <block wx:for="{{3}}">
+                <view bindtap='onToXuanColor' class="{{index==cindex?'active':''}}" data-sindex="{{index}}">白色</view>
+               
+               </block>
+            </view>
+      </view>
+     
+  </view>
+
+  <!-- 点击按钮确定 -->
+  <view class="ontoCar" bindtap='willToCar'>
+      确定
+  </view>
+</view>

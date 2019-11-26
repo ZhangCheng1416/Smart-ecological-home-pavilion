@@ -1,0 +1,18 @@
+.car-item{width:100%;height:300rpx;background: white;display: flex;align-items: center;}
+.car-item .car-item-img{width:42rpx;height:42rpx;margin:0 24rpx;}
+.car-item .car-item-img image{width:100%;height:100%}
+.car-item-img2{width:180rpx;height:180rpx;}
+.car-item-img2 image{width:100%;height:100%}
+
+.car-item-title{width:180rpx;height:180rpx;display: flex;flex-direction: column;justify-content: space-between;margin-left: 24rpx}
+.car-item-title .name{font-size: 34rpx;color:#333}
+.car-item-title .title-color{font-size: 28rpx;color:#afafaf;padding-top: 5rpx}
+.car-item-title .car-item-price{font-size: 26rpx;color:#df0000}
+.addAndDel{width:161rpx;height:32rpx;border: solid 1rpx #e7e7e7;border-radius: 4rpx 4rpx 4rpx 4rpx;display: flex;line-height: 32rpx;color:#aaa}
+.addAndDel .add{width:46rpx;text-align: center}
+.addAndDel .del{width:46rpx;text-align: center}
+.addAndDel .num{border-left: 1px solid #e7e7e7;border-right:1px solid #e7e7e7;flex: 1;text-align: center}
+.car-item-bottom{height:180rpx;display: flex;flex-direction: column-reverse;margin-left: 90rpx;position:relative}
+
+.car-item-bottom .delete{position:absolute;width:100rpx;height:180rpx;background: #f7f7f7;left:50rpx;display: flex;justify-content: center;flex-wrap: wrap;align-content: space-around}
+.car-item-bottom .delete image{width:44rpx;height:44rpx}

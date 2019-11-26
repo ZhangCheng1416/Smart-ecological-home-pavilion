@@ -1,0 +1,315 @@
+<!--index.wxml-->
+
+ <view class="index-top {{flag?'top-active':''}}">智能家具生态馆</view>
+ <view class="update">
+	 <scroll-view class="scroll-view_H" scroll-y style="height:1235rpx" bindscroll="onScroll">
+	     <view class="img"> <image src="../../images/home/4.jpg"></image> </view>
+	 <view class='banner'>
+	   <swiper indicator-dots='true' circular="true" previous-margin="50px" next-margin="25px" current='{{bannerIndex}}' autoplay='true' interval='3000' previous-margin="30px">
+	 	  <block wx:for="{{bannerImage}}" wx:key="{{index}}">
+	 		  <swiper-item>
+	 		    <view>
+	 		      <image src='{{item}}' mode='aspectFill'></image>
+	 		    </view>
+	 		  </swiper-item>
+	 	  </block>
+	   </swiper>
+	   <view class='arrow prev' bindtap='_indexRemove'>
+	     <image src='../../images/home/prev.png'></image>
+	   </view>
+	   <view class='arrow next' bindtap='_indexAdd'>
+	     <image src='../../images/home/next.png'></image>
+	   </view>
+	 </view>
+	 
+	 <view class='assemble'>
+	   <view class='assemble-top'>
+	     <image src='../../images/home/4.jpg'></image>
+	     <text>快和我拼团吧！！</text>
+	   </view>
+	   <view class='assemble-content'>
+	     <view class='assemble-shop'>
+	       <view class='assemble-shop-left'>
+	         <image src='../../images/home/assemble-shop.png'></image>
+	       </view>
+	       <view class='assemble-shop-right'>
+	         <text>双面透气设计呵护颈椎健康泰国乳胶薄款平面枕头</text>
+	         <view class='price'>
+	           ￥<text class='highPrice'>228</text>
+	           <text class='lowPrice'>￥150</text>
+	         </view>
+	 
+	         <view class='flashSale'>限时抢购</view>
+	       </view>
+	       <view class='triangle'></view>
+	     </view>
+	     <view class='assembleGroup'>
+	       <view>
+	         <image src='../../images/home/assemble-1.jpeg'></image>
+	       </view>
+	       <view>
+	         <image src='../../images/home/assemble-2.jpeg'></image>
+	       </view>
+	       <view>
+	         <image src='../../images/home/assemble-no.png'></image>
+	       </view>
+	       <view>
+	         <image src='../../images/home/assemble-no.png'></image>
+	       </view>
+	       <view>
+	         <image src='../../images/home/assemble-no.png'></image>
+	       </view>
+	     </view>
+	     <view class='just'>
+	       仅剩
+	       <text class='justPeo'>3</text>人,快呼唤小伙伴来参加吧!
+	     </view>
+	   </view>
+	 
+	   <view class='countDown'>
+	     <view class='countDown-left'></view>
+	     <view class='time'>
+	       剩余
+	       <text class='hour'>{{time.hour}}12</text> :
+	       <text class='minute'>{{time.minute}}34</text> :
+	       <text class='seconds'>{{time.second}}56</text> 结束
+	     </view>
+	     <view class='countDown-right'></view>
+	   </view>
+	 </view>
+	 
+	 <view class='coupon'>
+	   <view class='logo coupon-logo'>
+	     <image src='../../images/home/logo1.png'></image>
+	   </view>
+	   <view class='coupon-text1'>
+	     <text>玩趣加购   分享有礼</text>
+	   </view>
+	   <view class='coupon-text2'>
+	     <text>先领券   在购物</text>
+	   </view>
+	   <view class='coupon-box'>
+	     <view wx:for="{{couponList}}" wx:key="{{index}}" >
+	       <image src='{{item}}' bindtap="toCoupon"></image>
+	     </view>
+	   </view>
+	 </view>
+	 
+	 <view class='tailand'>
+	   <view class='main-head'>
+	     <image src='../../images/home/4.jpg' mode='aspectFill'></image>
+	     <view class='main-head-content'>
+	       <view>
+	         <image src='../../images/home/ele-left.png'></image>
+	         <text>镇店之宝  任君挑选</text>
+	         <image src='../../images/home/ele-right.png'></image>
+	       </view>
+	     </view>
+	   </view>
+	   <view class='main-content'>
+	     <view class='logo tailand-logo'>
+	       <image src='../../images/home/logo1.png'></image>
+	     </view>
+	     <view class='main-content-text1'>
+	       <text style='line-height:100rpx;'>泰国平面波浪枕</text>
+	       <image src='../../images/home/tailand-bg.png'></image>
+	       <view class='tailand-con1'>
+	         <image src='../../images/home/tailand-1.png'></image>
+	         <view class='tailand-price1'>
+	           <view class='tailand-price1-top'>
+	             <image src='../../images/home/logo3.png'></image>
+	             <text>￥<text class="price"><text class='count'>228</text>.00</text></text>
+	           </view>
+	           <view class='tailand-price1-bottom'>
+	             立即购买
+	             <view>
+	               <image src='../../images/home/arrow.png'></image>
+	             </view>
+	           </view>
+	         </view>
+	       </view>
+	     </view>
+	     <view class='main-content-detail1'>
+	       <view class='main-content-detail1-left'>
+	           <view>
+	                 <image src='../../images/home/城堡.png'></image>
+	           </view>
+	           <view>
+	                 <image src='../../images/home/tailand-pmz.png'></image>
+	           </view>
+	       </view>
+	       <view class='main-content-detail1-right'>
+	             <view class="imgs">
+	             <image src="/images/home/logo2.png"></image>
+	             </view>
+	            <view class="name">泰国平面软胶枕</view>
+	            <view class="box">
+	 
+	            </view>
+	         <view class='tailand-price1'>
+	           <view class='tailand-price1-top'>
+	            
+	             <text>￥<text class="price"><text class='count'>228</text>.00</text></text>
+	           </view>
+	           <view class='tailand-price1-bottom'>
+	             立即购买
+	             <view>
+	               <image src='../../images/home/arrow.png'></image>
+	             </view>
+	           </view>
+	         </view>
+	       </view>
+	     </view>
+	 
+	 <!-- 泰国波浪按摩枕 -->
+	 <view class="bolang">
+	     <view class='bolang-right'>
+	       <image src="/images/home/tailand--2.png"></image>
+	     </view>
+	     <view class="bolang-top1">
+	         <image src="/images/home/logo2.png"></image>
+	         <image src="/images/home/logo3.png"></image>
+	     </view>
+	     <view class="bolang-title">泰国波浪按摩椅</view>
+	     <view class="bolang-center"><image src="/images/home/tailand--1.png"></image></view>
+	     <!-- 波浪按摩枕 -->
+	     <view class="bolang-bottom">
+	        <view class="bolang-bottom-view">
+	           <view class='title'>波浪按摩枕</view>
+	           <view class="imgs"> <image src="/images/home/tailand11.png"></image> </view>
+	           <view class="bottom">
+	               <view class="imgs">
+	               <image src="/images/home/logo3.png"></image>
+	               </view>
+	               <view class="price">￥<text>238</text>.00</view>
+	               <view class="toshop">
+	                   <view>立即购买</view>
+	                   <view class="tu"><image src="/images/home/arrow.png"></image></view>
+	               </view>
+	           </view>
+	        </view>
+	        <view class="bolang-bottom-view">
+	           <view class='title'>波浪按摩枕</view>
+	           <view class="imgs"> <image src="/images/home/tailand11.png"></image> </view>
+	           <view class="bottom">
+	               <view class="imgs">
+	               <image src="/images/home/logo3.png"></image>
+	               </view>
+	               <view class="price">￥<text>238</text>.00</view>
+	               <view class="toshop">
+	                   <view>立即购买</view>
+	                   <view class="tu"><image src="/images/home/arrow.png"></image></view>
+	               </view>
+	           </view>
+	        </view>
+	     </view>
+	 </view>
+	 
+	 <!-- 口碑执勤，店长力荐 -->
+	   <view class="koubei">
+	       <view class='main-head'>
+	         <image src='../../images/home/4.jpg' mode='aspectFill'></image>
+	         <view class='main-head-content'>
+	           <view>
+	             <image src='../../images/home/ele-left.png'></image>
+	             <text>口碑臻品  店长力荐</text>
+	             <image src='../../images/home/ele-right.png'></image>
+	           </view>
+	         </view>
+	         
+	 
+	       </view>
+	        <view class=" bolang-top1">
+	         <image src="/images/home/logo2.png"></image>
+	         <image src="/images/home/logo3.png"></image>
+	        </view>
+	          <view class="koubei-title bolang-title">泰国乳胶美容枕</view>
+	         <!-- 口碑图片 -->
+	         <view class="koubei-bottom">
+	             <view class="bolang-bottom-view">
+	               <view class='title'>波浪按摩枕</view>
+	               <view class="imgs"> <image src="/images/home/tailand11.png"></image> </view>
+	               <view class="bottom">
+	                   <view class="imgs">
+	                   <image src="/images/home/logo3.png"></image>
+	                   </view>
+	                   <view class="price">￥<text>238</text>.00</view>
+	                   <view class="toshop">
+	                       <view>立即购买</view>
+	                       <view class="tu"><image src="/images/home/arrow.png"></image></view>
+	                   </view>
+	               </view>
+	           </view>
+	           <view class="bolang-bottom-view">
+	               <view class='title'>波浪按摩枕</view>
+	               <view class="imgs"> <image src="/images/home/tailand11.png"></image> </view>
+	               <view class="bottom">
+	                   <view class="imgs">
+	                   <image src="/images/home/logo3.png"></image>
+	                   </view>
+	                   <view class="price">￥<text>238</text>.00</view>
+	                   <view class="toshop">
+	                       <view>立即购买</view>
+	                       <view class="tu"><image src="/images/home/arrow.png"></image></view>
+	                   </view>
+	               </view>
+	           </view>
+	         </view>
+	   </view>
+	 
+	 <!-- 大图片区域 -->
+	   <view class="center-image">
+	       <image src="/images/home/beti.png"></image>
+	   </view>
+	 </view>
+	 <!-- 猜你喜欢与排行榜 -->
+	 <view class="likeAndPai">
+	     <!-- 排行榜 -->
+	     <view class="paihang">
+	         <view class="paihang-title">
+	             <view class="title-left">排行榜</view>
+	             <view class="title-right">
+	               <view wx:for="{{tabBarList}}" wx:key="{{index}}" class="t {{tabBarStatus==index?'active':''}}" bindtap="tabBarChange" data-id="{{index}}">{{item}}</view>
+	             </view>
+	         </view>
+	         <!-- 排行内容 -->
+	         <view class="paihang-content" wx:if="{{tabBarStatus==0}}">
+	             <block wx:for="{{3}}" wx:key="{{index}}">
+	               <view class="content-box">
+	                   <view class="imgs"><image src="/images/home/tailand-pmz.png"></image></view>
+	                   <view class="round">{{index+1}}</view>
+	                   <view class="title">
+	                     <view>泰国乳胶薄凉平民阿</view>
+	                     <view>199人付款</view>
+	                   </view>
+	               </view>
+	               </block>
+	         </view>
+			<view class="paihang-content" wx:if="{{tabBarStatus==1}}">
+			    <block wx:for="{{3}}" wx:key="{{index}}">
+			      <view class="content-box">
+			          <view class="imgs"><image src="/images/home/tailand-1.png"></image></view>
+			          <view class="round">{{index+1}}</view>
+			          <view class="title">
+			            <view>泰国乳胶薄凉平民阿</view>
+			            <view>199人付款</view>
+			          </view>
+			      </view>
+			      </block>
+			</view>
+	 
+	 
+	     </view>
+	     <!-- 猜你喜欢 -->
+
+	     <!-- 点击查看更多宝贝 -->
+	     <view class="likeAdd">
+	         点击查看更多宝贝
+	     </view>
+	 </view>
+	 
+	 </view>
+	 
+	 </scroll-view>
+ </view>
+   

@@ -1,0 +1,87 @@
+/* pages/placeOrder/placeOrder.wxss */
+page{background:#f5f5f5}
+.place-home{width:100%;
+	height: 128rpx;
+	background-color: #ffffff;
+	box-shadow: 1rpx 3rpx 7rpx 0rpx 
+		rgba(0, 0, 0, 0.06);position:relative;}
+.place-home view:nth-child(1){width:18rpx;height:34rpx;position:absolute;top:60%;left: 26rpx;transform: translate(0,-50%)}
+.place-home view:nth-child(1) image{width:100%;height:100%;}
+.place-home view:nth-child(2){font-size: 36rpx;color:#333;position:absolute;left: 50%;top:60%;transform: translate(-50%,-50%)}
+
+
+
+.place-top{width:100%;height:80rpx;display: flex;justify-content: space-around;align-items: center;background: white}
+.place-top image:nth-of-type(1){width:30rpx;height:38rpx;margin-left: -150rpx}
+.place-top image:nth-of-type(2){width:12rpx;height:22rpx;margin-right: -130rpx}
+.place-top view{font-size: 30rpx;color:#333;margin-left: -320rpx}
+
+.place-Fimg{width:100%;height:7rpx;background: white}
+.place-Fimg image{width:100%;height:100%;display: block}
+
+.place-shop{padding: 50rpx 26rpx;background: white;display: flex;position:relative}
+.place-shop .img{width:180rpx;height:180rpx;border-radius: 15rpx;overflow: hidden}
+.place-shop .img image{width:100%;height:100%;}
+.place-shop .title{margin-left: 12rpx}
+.place-shop .title view:nth-child(1){font-size: 34rpx;color:#333}
+.place-shop .title view:nth-child(2){font-size: 28rpx;color: #afafaf}
+.place-shop .price{position:absolute;bottom:50rpx;right:26rpx;display: flex}
+.place-shop .price view:nth-child(1){font-size: 26rpx;color:#999;margin-right: 20rpx}
+.place-shop .price view:nth-child(2){font-size: 26rpx;color:#333}
+
+.place-coupon{width:100%;background: white;display: flex;justify-content: space-between;align-items: center;height:80rpx;margin-top: 10rpx;padding:0  26rpx}
+.place-coupon view:nth-child(1){font-size: 26rpx;color:#333}
+.place-coupon view:nth-child(2){font-size: 26rpx;color:#999;display: flex;align-items: center;margin-right: 52rpx}
+.place-coupon view:nth-child(2) image{width:12rpx;height:22rpx;margin-left: 20rpx}
+
+.place-price{width:100%;background: white;margin-top: 10rpx;}
+.place-price .place-coupon:nth-child(2){border-top: 1px solid #f5f5f5}
+.place-price .place-coupon view:nth-child(2){color:#333}
+
+.place-liu{padding:0 26rpx;background: white;margin-top: 10rpx;display: flex;height:80rpx;align-items: center}
+.place-liu view:nth-child(1){font-size: 26rpx;color:#333}
+.place-liu view:nth-child(2){font-size: 26rpx;color:#999;margin-left: 52rpx}
+
+.place-zhifu{width:100%;background: white;margin-top: 10rpx;padding: 0 26rpx}
+.place-zhifu .zhifu{display: flex;height:80rpx;align-items: center;font-size: 26rpx;color:#333}
+.place-zhifu .img{width:24rpx;height:24rpx;margin-right: 24rpx}
+.place-zhifu .img image{width:100%;height:100%;}
+.place-zhifu .zhifu:nth-child(2){border-top: 1px solid #f5f5f5}
+
+.place-order{width:100%;padding:0 26rpx;height:120rpx;background: white;margin-top: 100rpx;display: flex;justify-content: space-between;align-items: center}
+.place-order .place-order-toOrder{margin-right: 52rpx;width: 150rpx;
+	height: 70rpx;
+	background-color: #dc3025;
+	box-shadow: 1rpx 4rpx 12rpx 1rpx 
+		rgba(164, 215, 189, 0.29);
+	border-radius: 12rpx;color:white;text-align: center;line-height: 70rpx}
+.place-order .place-order-price{display: flex;align-items: center}.place-order .place-order-price view:nth-child(1){font-size: 28rpx;color:#333}
+.place-order .place-order-price view:nth-child(2){font-size: 36rpx;color: #e01616;}
+
+
+.toPassword{width:100vw;height:100vh;background: #000;opacity: 0.7;position: fixed;top:0;left: 0;z-index: 1}
+
+.toOkPassword{position:fixed;width: 702rpx;	height: 500rpx;background-color: #ffffff;border-radius: 12rpx;z-index: 3;left: 50%;top:50%;transform: translate(-50%,-68%);overflow: hidden}
+.toOk-name{width:100%;height:100rpx;border-bottom: 1px solid #2ad4c1;display: flex;align-items: center;}
+.toOk-name .closeTook{width:22rpx;height:22rpx;margin-left: 26rpx;margin-top: -20rpx}
+.toOk-name .closeTook image{width:100%;height:100%}
+.toOk-name .name{width:55rpx;height:55rpx;border-radius: 50%;overflow: hidden;margin: 0 20rpx}
+.toOk-name .name image{width:100%;height:100%}
+.toOk-name view:nth-child(3){font-size: 34rpx; color: #333}
+
+.toOkPassword .nameAndPrice{width:100%;height:150rpx;border-bottom: 1px solid #f5f5f5;text-align: center;}
+.toOkPassword .nameAndPrice view:nth-child(1){font-size: 26rpx;color:#333;margin-top: 35rpx}
+.toOkPassword .nameAndPrice view:nth-child(2){font-size: 54rpx; color:#333;margin-top: 6rpx}
+.toOkPassword .nameAndPrice view:nth-child(2) text{font-size: 26rpx}
+
+.toOkPassword .yinhang{width:100%;height:100rpx;display: flex;align-items: center;justify-content: space-between}
+.toOkPassword .yinhang>view{display: flex;align-items: center;margin-left: 26rpx}
+.toOkPassword .yinhang>view image{width:45rpx;height:45rpx;margin-right: 15rpx;font-size: 24rpx;color:#777}
+.toOkPassword .yinhang>image{width:12rpx;height:20rpx;margin-right: 26rpx}
+.nameAndPrice-btn{width: 300rpx;margin:0 auto;
+	height: 90rpx;
+	background-color: #dc3025;
+	border-radius: 14rpx;text-align: center;line-height: 96rpx;color:#fff;font-size: 34rpx}
+
+
+

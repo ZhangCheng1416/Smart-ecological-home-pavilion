@@ -1,0 +1,35 @@
+<!--pages/car/car.wxml-->
+<import src="../template/car-template/car-template.wxml" />
+
+<view>
+
+<!-- 当有商品时 -->
+<view  wx:if="{{true}}">
+<view class="car-main">
+<!-- 模板的引用 -->
+ <block wx:for="{{9}}">
+  <template is="car-item"></template>
+  </block>
+</view>
+<view class="car-bottom">
+  <view class="quanxuan" bindtap='onToSelectAll'>
+    
+      <image src="/images/car/icon-ok.png" wx:if="{{true}}"></image>
+      <image src="/images/car/icon-none.png" wx:else></image>
+      <view>全选</view>
+  </view>
+  <view class="car-bottom-right">
+      <view class="price">￥238.00</view>
+      <view class="toPrice">去结算</view>
+  </view>
+</view>
+</view>
+
+<!-- 当没有商品时 -->
+<view wx:else class="no-car">
+      <image src="/images/car/xiang.png"></image>
+      <view class="title">购物车是空的~</view>
+      <view class="no-car-btn">去逛逛</view>
+</view>
+
+</view>
